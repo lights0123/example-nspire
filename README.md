@@ -28,7 +28,14 @@ In your `Cargo.toml`, the following options can be added:
 [package.metadata.zehn]
 name = "Hello World" # Name passed to genzehn
 compress = true      # Compress binary with genzehn
+notice = "Message"   # Add notice "Message"
 ```
+These attributes can be seen when holding down the catalog key (book) when
+launching your application.
+
+Additionally, the `version` and `authors` fields of your `Cargo.toml` are automatically
+added to the binary. Only the first digit of the version will be displayed, and multiple authors
+are joined together with a space.
 
 # Make your own app
 This project is set up using Cargo workspaces, which is not ideal for single-application

@@ -11,3 +11,4 @@ ndless-sys = "0.1.1"
 [package.metadata.zehn]
 name = "Hello World"
 compress = true
+notice = "Test"

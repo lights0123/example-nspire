@@ -22,10 +22,17 @@ TARGET=armv5te-nspire-eabi
 MANIFEST="$(cargo read-manifest)"
 FRIENDLY_NAME="$(jq -r '.metadata.zehn.name' <<< "$MANIFEST" )"
 COMPRESS="$(jq -r '.metadata.zehn.compress' <<< "$MANIFEST" )"
-FLAGS=""
-[ "$COMPRESS" = "true" ] && FLAGS="$FLAGS --compress"
-[ "FRIENDLY_NAME" != "null" ] && FLAGS="$FLAGS --name \"$FRIENDLY_NAME\""
-genzehn --input "$TARGET_DIR/$TARGET/debug/$NAME" --output "$TARGET_DIR/$TARGET/debug/$NAME.zehn" $FLAGS
+NOTICE="$(jq -r '.metadata.zehn.notice' <<< "$MANIFEST" )"
+VERSION="$(jq -r '.version' <<< "$MANIFEST" )"
+AUTHORS="$(jq -r '.authors | join(" ")' <<< "$MANIFEST" )"
+FLAGS=()
+[ "$COMPRESS" = "true" ] && FLAGS+=("--compress")
+[ "$FRIENDLY_NAME" != "null" ] && FLAGS+=("--name" "$FRIENDLY_NAME")
+[ "$NOTICE" != "null" ] && FLAGS+=("--notice" "$NOTICE")
+[ "$VERSION" != "null" ] && FLAGS+=("--version" $(sed 's@^[^0-9]*\([0-9]\+\).*@\1@' <<< "$VERSION"))
+[ "$AUTHORS" != "null" ] && FLAGS+=("--author" "$AUTHORS")
+
+genzehn --input "$TARGET_DIR/$TARGET/debug/$NAME" --output "$TARGET_DIR/$TARGET/debug/$NAME.zehn" "${FLAGS[@]}"
 make-prg "$TARGET_DIR/$TARGET/debug/$NAME.zehn" "$TARGET_DIR/$TARGET/debug/$NAME.tns"
 '''
 ]
@@ -40,10 +47,17 @@ TARGET=armv5te-nspire-eabi
 MANIFEST="$(cargo read-manifest)"
 FRIENDLY_NAME="$(jq -r '.metadata.zehn.name' <<< "$MANIFEST" )"
 COMPRESS="$(jq -r '.metadata.zehn.compress' <<< "$MANIFEST" )"
-FLAGS=""
-[ "$COMPRESS" = "true" ] && FLAGS="$FLAGS --compress"
-[ "FRIENDLY_NAME" != "null" ] && FLAGS="$FLAGS --name \"$FRIENDLY_NAME\""
-genzehn --input "$TARGET_DIR/$TARGET/release/$NAME" --output "$TARGET_DIR/$TARGET/release/$NAME.zehn" $FLAGS
+NOTICE="$(jq -r '.metadata.zehn.notice' <<< "$MANIFEST" )"
+VERSION="$(jq -r '.version' <<< "$MANIFEST" )"
+AUTHORS="$(jq -r '.authors | join(" ")' <<< "$MANIFEST" )"
+FLAGS=()
+[ "$COMPRESS" = "true" ] && FLAGS+=("--compress")
+[ "$FRIENDLY_NAME" != "null" ] && FLAGS+=("--name" "$FRIENDLY_NAME")
+[ "$NOTICE" != "null" ] && FLAGS+=("--notice" "$NOTICE")
+[ "$VERSION" != "null" ] && FLAGS+=("--version" $(sed 's@^[^0-9]*\([0-9]\+\).*@\1@' <<< "$VERSION"))
+[ "$AUTHORS" != "null" ] && FLAGS+=("--author" "$AUTHORS")
+
+genzehn --input "$TARGET_DIR/$TARGET/release/$NAME" --output "$TARGET_DIR/$TARGET/release/$NAME.zehn" "${FLAGS[@]}"
 make-prg "$TARGET_DIR/$TARGET/release/$NAME.zehn" "$TARGET_DIR/$TARGET/release/$NAME.tns"
 '''
 ]
