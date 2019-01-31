@@ -1,6 +1,6 @@
 [package]
 name = "example-nspire"
-description = "An example app for the TI Nspire written in Rust using Ndlesa"
+description = "An example app for the TI Nspire written in Rust using Ndless"
 version = "0.1.0"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
