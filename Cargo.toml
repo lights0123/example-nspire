@@ -1,0 +1,12 @@
+[package]
+name = "example-nspire"
+description = "An example app for the TI Nspire written in Rust using Ndlesa"
+version = "0.1.0"
+authors = ["lights0123 <developer@lights0123.com>"]
+edition = "2018"
+repository = "https://github.com/lights0123/example-nspire"
+license = "MIT OR Apache-2.0 OR CC0-1.0"
+
+[dependencies]
+nspire = "0.1.0"
+ndless-sys = "0.1.1"
