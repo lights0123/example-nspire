@@ -1,0 +1,13 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+authors = ["lights0123 <developer@lights0123.com>"]
+edition = "2018"
+
+[dependencies]
+nspire = "0.2.0"
+ndless-sys = "0.1.1"
+
+[package.metadata.zehn]
+name = "Hello World"
+compress = true
