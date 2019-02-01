@@ -23,6 +23,7 @@ MANIFEST="$(cargo read-manifest)"
 FRIENDLY_NAME="$(jq -r '.metadata.zehn.name' <<< "$MANIFEST" )"
 COMPRESS="$(jq -r '.metadata.zehn.compress' <<< "$MANIFEST" )"
 NOTICE="$(jq -r '.metadata.zehn.notice' <<< "$MANIFEST" )"
+ADD_FLAGS="$(jq -r '.metadata.zehn.flags' <<< "$MANIFEST" )"
 VERSION="$(jq -r '.version' <<< "$MANIFEST" )"
 AUTHORS="$(jq -r '.authors | join(" ")' <<< "$MANIFEST" )"
 FLAGS=()
@@ -31,6 +32,7 @@ FLAGS=()
 [ "$NOTICE" != "null" ] && FLAGS+=("--notice" "$NOTICE")
 [ "$VERSION" != "null" ] && FLAGS+=("--version" $(sed 's@^[^0-9]*\([0-9]\+\).*@\1@' <<< "$VERSION"))
 [ "$AUTHORS" != "null" ] && FLAGS+=("--author" "$AUTHORS")
+[ "$ADD_FLAGS" != "null" ] && eval FLAGS+=($ADD_FLAGS)
 
 genzehn --input "$TARGET_DIR/$TARGET/debug/$NAME" --output "$TARGET_DIR/$TARGET/debug/$NAME.zehn" "${FLAGS[@]}"
 make-prg "$TARGET_DIR/$TARGET/debug/$NAME.zehn" "$TARGET_DIR/$TARGET/debug/$NAME.tns"
@@ -48,6 +50,7 @@ MANIFEST="$(cargo read-manifest)"
 FRIENDLY_NAME="$(jq -r '.metadata.zehn.name' <<< "$MANIFEST" )"
 COMPRESS="$(jq -r '.metadata.zehn.compress' <<< "$MANIFEST" )"
 NOTICE="$(jq -r '.metadata.zehn.notice' <<< "$MANIFEST" )"
+ADD_FLAGS="$(jq -r '.metadata.zehn.flags' <<< "$MANIFEST" )"
 VERSION="$(jq -r '.version' <<< "$MANIFEST" )"
 AUTHORS="$(jq -r '.authors | join(" ")' <<< "$MANIFEST" )"
 FLAGS=()
@@ -56,6 +59,7 @@ FLAGS=()
 [ "$NOTICE" != "null" ] && FLAGS+=("--notice" "$NOTICE")
 [ "$VERSION" != "null" ] && FLAGS+=("--version" $(sed 's@^[^0-9]*\([0-9]\+\).*@\1@' <<< "$VERSION"))
 [ "$AUTHORS" != "null" ] && FLAGS+=("--author" "$AUTHORS")
+[ "$ADD_FLAGS" != "null" ] && eval FLAGS+=($ADD_FLAGS)
 
 genzehn --input "$TARGET_DIR/$TARGET/release/$NAME" --output "$TARGET_DIR/$TARGET/release/$NAME.zehn" "${FLAGS[@]}"
 make-prg "$TARGET_DIR/$TARGET/release/$NAME.zehn" "$TARGET_DIR/$TARGET/release/$NAME.tns"

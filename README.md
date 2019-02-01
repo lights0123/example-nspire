@@ -26,9 +26,10 @@ You may skip `rustup run nightly` if you set nightly as your default compiler
 In your `Cargo.toml`, the following options can be added:
 ```toml
 [package.metadata.zehn]
-name = "Hello World" # Name passed to genzehn
-compress = true      # Compress binary with genzehn
-notice = "Message"   # Add notice "Message"
+name = "Hello World"             # Name passed to genzehn
+compress = true                  # Compress binary with genzehn
+notice = "Message"               # Add notice "Message"
+flags = "--240x320-support true" # Add additional flags to be passed to genzehn
 ```
 These attributes can be seen when holding down the catalog key (book) when
 launching your application.

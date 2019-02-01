@@ -1,6 +1,6 @@
 [package]
 name = "hello-world"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
@@ -13,3 +13,4 @@ ndless-handler = "0.1.0"
 name = "Hello World"
 compress = true
 notice = "Test"
+flags = "--240x320-support true"
