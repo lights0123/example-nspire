@@ -2,6 +2,7 @@
 #![no_main]
 
 use nspire::prelude::*;
+extern crate ndless_handler;
 
 #[no_mangle]
 fn main() {

@@ -1,0 +1,18 @@
+[package]
+name = "hello-world-sdl"
+version = "0.1.0"
+authors = ["lights0123 <developer@lights0123.com>"]
+edition = "2018"
+
+[dependencies]
+nspire = "0.3.2"
+ndless-sys = "0.1.1"
+ndless-sdl = "0.1.0"
+ndless-handler = "0.1.0"
+num = { version = "0.2.0", default-features = false }
+cstr_core = "0.1.2"
+
+[package.metadata.zehn]
+name = "Hello World SDL"
+compress = true
+notice = "Crashes on physical calculator"
