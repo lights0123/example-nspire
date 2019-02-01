@@ -1,5 +1,6 @@
 #![no_std]
 #![no_main]
+#![feature(panic_info_message)]
 
 extern crate ndless_handler;
 
@@ -12,7 +13,18 @@ pub struct Rect {
 	pub w: u32,
 	pub h: u32
 }
+#[panic_handler]
+fn panic(info: &core::panic::PanicInfo) -> ! {
+	let msg = match info.message() {
+		Some(err) => format!("An error occured: {}", err),
+		None => format!("An error occured!")
+	};
+	nspire::msg::msg("Error", format!("{}", msg));
+	unsafe { ndless_sys::abort() }
+}
+fn format(args: core::fmt::Arguments) {
 
+}
 #[no_mangle]
 fn main() {
 	use nspire::msg::*;
