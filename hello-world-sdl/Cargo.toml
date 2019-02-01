@@ -1,6 +1,6 @@
 [package]
 name = "hello-world-sdl"
-version = "0.1.0"
+version = "0.2.1"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
@@ -16,3 +16,4 @@ cstr_core = "0.1.2"
 name = "Hello World SDL"
 compress = true
 notice = "Crashes on physical calculator"
+flags = "--240x320-support true"
