@@ -5,7 +5,7 @@ authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
 [dependencies]
-nspire = "0.3.1"
+nspire = "0.3.2"
 ndless-sys = "0.1.1"
 ndless-handler = "0.1.0"
 
