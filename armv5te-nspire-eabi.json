@@ -17,7 +17,7 @@
     "ar": "arm-none-eabi-ar",
     "dynamic-linking": false,
     "executables": true,
-    "features": "+v5te,+soft-float",
+    "features": "+v5te,+soft-float,+strict-align",
     "c-compiler": "arm-none-eabi-gcc",
     "c-flags": "-mcpu=arm926ej-s -D _TINSPIRE -fuse-ld=gold",
     "c-link-flags": "-mcpu=arm926ej-s -D _TINSPIRE -fuse-ld=gold",
