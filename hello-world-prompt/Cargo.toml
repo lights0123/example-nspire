@@ -1,6 +1,6 @@
 [package]
-name = "hello-world"
-version = "1.0.0"
+name = "hello-world-prompt"
+version = "0.1.0"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
@@ -9,7 +9,7 @@ nspire = "0.5.1"
 ndless-handler = "0.1.0"
 
 [package.metadata.zehn]
-name = "Hello World"
+name = "Hello World Prompt"
 compress = true
 notice = "Test"
 flags = "--240x320-support true"

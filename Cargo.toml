@@ -1,5 +1,6 @@
 [workspace]
 members = [
 	"hello-world",
-	"hello-world-sdl"
+	"hello-world-sdl",
+	"hello-world-prompt",
 ]

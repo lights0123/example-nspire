@@ -29,7 +29,15 @@ name = "hello-world"
 version = "1.0.0"
 dependencies = [
  "ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "nspire 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nspire 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "hello-world-prompt"
+version = "0.1.0"
+dependencies = [
+ "ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nspire 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -38,7 +46,7 @@ version = "1.0.0"
 dependencies = [
  "ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-sdl 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "nspire 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nspire 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -71,7 +79,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "cty 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "nspire 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nspire 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "num 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand 0.6.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -96,7 +104,7 @@ dependencies = [
 
 [[package]]
 name = "nspire"
-version = "0.5.0"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -288,7 +296,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum ndless-sdl 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1d3f75afdaa005fe916d528e73ddd80414c43c33dd24fa8cb5b535011919a98d"
 "checksum ndless-sys 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "0c5782dbbceef33a1e65a3cf0208256fe4fa1eb418bd6f7adcffba395f2ce77c"
 "checksum nspire 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "ec688ec8add240c2aefd27e71e2d649a87eea6b8136f71a6c43053b0816fe85b"
-"checksum nspire 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "bd66107411e4151f58f35eacec3b4d6e2d81167e1412e850af22424aaf720b11"
+"checksum nspire 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)" = "8cfb19cf4363557ce1fbb4fad303a54da03f6a300cbbcea14e4661366e1e39bc"
 "checksum num 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "cf4825417e1e1406b3782a8ce92f4d53f26ec055e3622e1881ca8e9f5f9e08db"
 "checksum num-complex 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "107b9be86cd2481930688277b675b0114578227f034674726605b8a482d8baf8"
 "checksum num-integer 0.1.39 (registry+https://github.com/rust-lang/crates.io-index)" = "e83d528d2677f0518c570baf2b7abdcf0cd2d248860b68507bdcb3e91d4c0cea"
