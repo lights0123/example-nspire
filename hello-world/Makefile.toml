@@ -1,8 +1,5 @@
-[tasks.install-rust-src]
-install_crate = { rustup_component_name = "rust-src" }
-
 [tasks.init]
-dependencies = ["install-rust-src"]
+install_crate = { rustup_component_name = "rust-src" }
 
 [tasks.build-release]
 command = "cargo"
