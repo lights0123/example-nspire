@@ -7,8 +7,8 @@ extern crate ndless_handler;
 
 use ndless_sdl::nsdl::{Font, FontOptions};
 use ndless_sdl::video::{SurfaceFlag, VideoFlag};
-use nspire::input::{get_keys, Key};
-use nspire::prelude::*;
+use ndless::input::{get_keys, Key};
+use ndless::prelude::*;
 
 fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 	let str = str.into();
@@ -23,7 +23,7 @@ fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 	out
 }
 
-#[no_mangle]
+#[entry]
 fn main() {
 	ndless_sdl::init(&[ndless_sdl::InitFlag::Video]);
 	let screen = match ndless_sdl::video::set_video_mode(320, 240, 16,

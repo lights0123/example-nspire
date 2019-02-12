@@ -2,5 +2,6 @@
 members = [
 	"hello-world",
 	"hello-world-sdl",
+	"hello-world-text",
 	"hello-world-prompt",
 ]

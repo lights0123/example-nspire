@@ -1,5 +1,5 @@
 [package]
-name = "hello-world-sdl"
+name = "hello-world-text"
 version = "1.0.0"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
@@ -8,9 +8,10 @@ edition = "2018"
 ndless = "0.6.0"
 ndless-sdl = "0.1.5"
 ndless-handler = "0.1.0"
+ndless-freetype = "0.1.1"
 
 [package.metadata.zehn]
-name = "Hello World SDL"
+name = "Hello World Text"
 compress = true
 notice = "Press ESC to exit"
 flags = "--240x320-support true"

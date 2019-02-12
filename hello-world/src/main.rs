@@ -3,10 +3,11 @@
 
 extern crate ndless_handler;
 
-use nspire::prelude::*;
-#[no_mangle]
+use ndless::prelude::*;
+
+#[entry]
 fn main() {
-	use nspire::msg::*;
+	use ndless::msg::*;
 	let button_pressed = msg_3b("Hello", "Hello, World!", "1", "2", "3");
 	let message = match button_pressed {
 		Button::ONE => "one",
