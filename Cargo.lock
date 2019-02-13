@@ -59,7 +59,7 @@ version = "1.0.0"
 dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-sdl 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-sdl 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -69,7 +69,7 @@ dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-sdl 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-sdl 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -142,7 +142,7 @@ dependencies = [
 
 [[package]]
 name = "ndless-sdl"
-version = "0.1.5"
+version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -276,7 +276,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1fa0c984e9de369945d03b0dacfaf40b0b264d064956df7ffbff81abbf0669c9"
 "checksum ndless-handler 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "b03ad75ca67cccddebe463577a60844aaf5d46e73541ff85df79e664d186e33f"
 "checksum ndless-macros 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "3533c4d99ecdf7ccfb53df5dcb9523239510973ab2205a84a9d73c9c1cd4b51c"
-"checksum ndless-sdl 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)" = "0184257b3ddb31c0eee7f945c61540dd3fc176dc718df46c0f8af62665020b2e"
+"checksum ndless-sdl 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)" = "c1dc81c7bd0a46e9a3844cc8aab2008c063a2aa0221cf2268dd1c6c2d1740d8c"
 "checksum ndless-static-vars 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "23d6a62f3ca036c792590fc6eb94d49e80c97cafce8e8d9bd73cfa11d35c1d0f"
 "checksum ndless-sys 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)" = "a96ee84b1578785a951683ed8c28b863b71317e1d1cca9feea7144ef4af6f6f9"
 "checksum nspire 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "ec688ec8add240c2aefd27e71e2d649a87eea6b8136f71a6c43053b0816fe85b"

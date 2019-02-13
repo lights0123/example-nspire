@@ -6,7 +6,7 @@ edition = "2018"
 
 [dependencies]
 ndless = "0.6.0"
-ndless-sdl = "0.1.5"
+ndless-sdl = "0.1.6"
 ndless-handler = "0.1.0"
 
 [package.metadata.zehn]
