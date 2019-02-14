@@ -6,7 +6,7 @@ edition = "2018"
 
 [dependencies]
 ndless = "0.6.0"
-ndless-handler = "0.1.0"
+ndless-handler = "0.1.1"
 
 [package.metadata.zehn]
 name = "Hello World Prompt"
