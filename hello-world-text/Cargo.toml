@@ -1,6 +1,6 @@
 [package]
 name = "hello-world-text"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 

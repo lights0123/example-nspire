@@ -5,3 +5,6 @@ members = [
 	"hello-world-text",
 	"hello-world-prompt",
 ]
+
+[profile.release]
+lto = true

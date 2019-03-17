@@ -2,6 +2,7 @@
 install_crate = { rustup_component_name = "rust-src" }
 
 [tasks.build-release]
+env = { "CARGO_INCREMENTAL" = "0" }
 command = "cargo"
 args = ["xbuild", "--target", "../armv5te-nspire-eabi.json", "--release"]
 

@@ -39,7 +39,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "hello-world"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -47,7 +47,7 @@ dependencies = [
 
 [[package]]
 name = "hello-world-prompt"
-version = "0.1.0"
+version = "1.0.1"
 dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -55,7 +55,7 @@ dependencies = [
 
 [[package]]
 name = "hello-world-sdl"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -64,7 +64,7 @@ dependencies = [
 
 [[package]]
 name = "hello-world-text"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
