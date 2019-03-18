@@ -41,35 +41,35 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "hello-world"
 version = "1.0.1"
 dependencies = [
- "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-handler 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "hello-world-prompt"
 version = "1.0.1"
 dependencies = [
- "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-handler 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "hello-world-sdl"
 version = "1.0.1"
 dependencies = [
- "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-sdl 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-handler 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-sdl 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "hello-world-text"
 version = "1.0.1"
 dependencies = [
- "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-sdl 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-freetype 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-handler 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-sdl 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -82,19 +82,7 @@ dependencies = [
 
 [[package]]
 name = "ndless"
-version = "0.5.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-dependencies = [
- "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "cty 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-macros 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-static-vars 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-sys 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "ndless"
-version = "0.6.0"
+version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -106,7 +94,7 @@ dependencies = [
 
 [[package]]
 name = "ndless-freetype"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "bitflags 1.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -114,13 +102,12 @@ dependencies = [
  "cty 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "embedded-freetype-sys 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "ndless-sys 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "ndless-handler"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cty 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -142,13 +129,13 @@ dependencies = [
 
 [[package]]
 name = "ndless-sdl"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cstr_core 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "cty 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ndless-freetype 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "num 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "unicode-segmentation 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -271,12 +258,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum embedded-freetype-sys 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "795b3c0acb1c2d84179287a0ea65942992333a2781dc18e421f8e49d8f5a4387"
 "checksum failure 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)" = "795bd83d3abeb9220f257e597aa0080a508b27533824adf336529648f6abf7e2"
 "checksum memchr 2.1.3 (registry+https://github.com/rust-lang/crates.io-index)" = "e1dd4eaac298c32ce07eb6ed9242eda7d82955b9170b7d6db59b2e02cc63fcb8"
-"checksum ndless 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "bb601ad70f942541a6ff3b6371bd0bd6228c7b2cc6c7656f4e097608648a365f"
-"checksum ndless 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "44fd971956311e6cb4a5c965cbf1f84ce20859e5a3a13d55663d1c62fd125a0c"
-"checksum ndless-freetype 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1fa0c984e9de369945d03b0dacfaf40b0b264d064956df7ffbff81abbf0669c9"
-"checksum ndless-handler 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "93fb259812fb26a4e89fc054af3697e50808c8b8fea25eac62ac191b5452dadd"
+"checksum ndless 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = "7ec648d7e7727f20891a10f9c7c770772d58f31d309f1535bf46b2989e1917e3"
+"checksum ndless-freetype 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "10a3b599f3c4df9bcf4a68d9106ff385dc9f7566a6da0051f0886e3f83b49347"
+"checksum ndless-handler 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "78a77fc0fe6c4c5dcdbdc930a7a0a3f524f95991bc5a2046bcaf7c85c3f7b386"
 "checksum ndless-macros 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "3533c4d99ecdf7ccfb53df5dcb9523239510973ab2205a84a9d73c9c1cd4b51c"
-"checksum ndless-sdl 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)" = "0b378a00f9bf003479c11b0cb32233d59e28c444120b0fe569aefbacf0e936a4"
+"checksum ndless-sdl 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)" = "014c5ba0887f048338eb6ec1c3d49354a71b2f6e4cd447e56300e2b1ddfeedc8"
 "checksum ndless-static-vars 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "23d6a62f3ca036c792590fc6eb94d49e80c97cafce8e8d9bd73cfa11d35c1d0f"
 "checksum ndless-sys 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)" = "a96ee84b1578785a951683ed8c28b863b71317e1d1cca9feea7144ef4af6f6f9"
 "checksum nspire 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "ec688ec8add240c2aefd27e71e2d649a87eea6b8136f71a6c43053b0816fe85b"

@@ -5,8 +5,8 @@ authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
 [dependencies]
-ndless = "0.6.0"
-ndless-handler = "0.1.1"
+ndless = "0.6.1"
+ndless-handler = "0.1.2"
 
 [package.metadata.zehn]
 name = "Hello World"

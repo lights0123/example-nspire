@@ -38,7 +38,7 @@ fn main() {
 		}),
 		ndless_sdl::video::RGB(142, 120, 255),
 	);
-	let mut text = Text::new(face);
+	let mut text = Text::new(&face);
 	text.text("this is some text").height(40);
 	screen.blit(&text.render());
 	text.reallocate();
