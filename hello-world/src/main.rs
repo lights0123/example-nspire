@@ -14,5 +14,5 @@ fn main() {
 		Button::TWO => "two",
 		Button::THREE => "three",
 	};
-	msg("Title", format!("You pressed button number {}!", message));
+	msg("Title", &format!("You pressed button number {}!", message));
 }

@@ -1,11 +1,11 @@
 [package]
 name = "hello-world-text"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
 [dependencies]
-ndless = "0.6.1"
+ndless = "0.7.1"
 ndless-sdl = "0.1.8"
 ndless-handler = "0.1.2"
 ndless-freetype = "0.1.2"

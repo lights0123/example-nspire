@@ -3,7 +3,7 @@
 ## Prerequisites
 - Ndless toolchain installed and added to path
 - Rustup installed
-- Latest Rust Nightly installed (nightly-2019-03-17 works)
+- Latest Rust Nightly installed (nightly-2019-04-20 works)
 - `jq`
 - Unix-like (tested on Linux, most likely Mac and Cygwin will work as well)
 
