@@ -5,8 +5,8 @@ authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
 [dependencies]
-ndless = "0.7.1"
-ndless-handler = "0.1.2"
+ndless = "0.8.2"
+ndless-handler = "0.2.1"
 
 [package.metadata.zehn]
 name = "Hello World Prompt"

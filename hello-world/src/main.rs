@@ -10,9 +10,9 @@ fn main() {
 	use ndless::msg::*;
 	let button_pressed = msg_3b("Hello", "Hello, World!", "1", "2", "3");
 	let message = match button_pressed {
-		Button::ONE => "one",
-		Button::TWO => "two",
-		Button::THREE => "three",
+		Button::One => "one",
+		Button::Two => "two",
+		Button::Three => "three",
 	};
 	msg("Title", &format!("You pressed button number {}!", message));
 }
