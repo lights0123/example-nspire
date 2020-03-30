@@ -104,9 +104,9 @@ dependencies = [
 
 [[package]]
 name = "ndless"
-version = "0.8.2"
+version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5186a2724a0a1fd2f8f9efcf791101a105a58b959b78b66963b66b4cf597167f"
+checksum = "3b949c7f1610db133f07608dc9b18f2d55106f2af085d328a9a7ec34a596b1f3"
 dependencies = [
  "cstr_core",
  "cty 0.2.1",
@@ -170,9 +170,9 @@ dependencies = [
 
 [[package]]
 name = "ndless-static-vars"
-version = "2.0.1"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35d350f7ad52ef1c6600dbbb3e2fe39df3c2c44853a67e6534a92326101f74a4"
+checksum = "8a79eb8c316aaa16a603b30b1029954cfefb7fdee709d9e0f3ec1473cdf52d5f"
 dependencies = [
  "cty 0.2.1",
 ]

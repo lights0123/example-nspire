@@ -5,10 +5,10 @@
 
 extern crate ndless_handler;
 
-use ndless_sdl::nsdl::{Font, FontOptions};
-use ndless_sdl::video::{SurfaceFlag, VideoFlag};
 use ndless::input::{get_keys, Key};
 use ndless::prelude::*;
+use ndless_sdl::nsdl::{Font, FontOptions};
+use ndless_sdl::video::{SurfaceFlag, VideoFlag};
 
 fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 	let str = str.into();
@@ -26,23 +26,28 @@ fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 #[entry]
 fn main() {
 	ndless_sdl::init(&[ndless_sdl::InitFlag::Video]);
-	let screen = match ndless_sdl::video::set_video_mode(320, 240, 16,
-	                                                     &[SurfaceFlag::SWSurface],
-	                                                     &[VideoFlag::NoFrame]) {
-		Ok(screen) => screen,
-		Err(err) => panic!("failed to set video mode: {}", err)
-	};
+	let screen = ndless_sdl::video::set_video_mode(
+		320,
+		240,
+		16,
+		&[SurfaceFlag::SWSurface],
+		&[VideoFlag::NoFrame],
+	)
+	.expect("failed to set video mode");
 
 	let font = Font::new(FontOptions::Thin, 255, 255, 255);
 	let mut j = 0u32;
 
 	loop {
-		screen.fill_rect(Some(ndless_sdl::Rect {
-			x: 0,
-			y: 0,
-			w: 320,
-			h: 240,
-		}), ndless_sdl::video::RGB(142, 120, 255));
+		screen.fill_rect(
+			Some(ndless_sdl::Rect {
+				x: 0,
+				y: 0,
+				w: 320,
+				h: 240,
+			}),
+			ndless_sdl::video::RGB(142, 120, 255),
+		);
 
 		let keys = get_keys();
 		if keys.contains(&Key::Esc) {

@@ -18,16 +18,14 @@ fn main() {
 	let face = library.new_memory_face(open_sans, 0).unwrap();
 
 	ndless_sdl::init(&[ndless_sdl::InitFlag::Video]);
-	let screen = match ndless_sdl::video::set_video_mode(
+	let screen = ndless_sdl::video::set_video_mode(
 		320,
 		240,
-		if ndless::hw::has_colors() { 16 } else { 8 },
+		16,
 		&[SurfaceFlag::SWSurface],
 		&[VideoFlag::NoFrame],
-	) {
-		Ok(screen) => screen,
-		Err(err) => panic!("failed to set video mode: {}", err),
-	};
+	)
+	.expect("failed to set video mode");
 
 	screen.fill_rect(
 		Some(ndless_sdl::Rect {
