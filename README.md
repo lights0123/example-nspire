@@ -3,20 +3,19 @@
 ## Prerequisites
 - Ndless toolchain installed and added to path
 - Rustup installed
-- Latest Rust Nightly installed (nightly-2019-04-20 works)
-- `jq`
+- Latest Rust Nightly installed (nightly-2020-05-07 works)
 - Unix-like (tested on Linux, most likely Mac and Cygwin will work as well)
 
 Complete install script:
 ```bash
 curl https://sh.rustup.rs -sSf | sh # skip if rustup already installed
 rustup install nightly # skip if nightly already installed
-cargo install cargo-make
+cargo install cargo-ndless
 ```
 
 ## Building
-To create a debug version, run `cargo +nightly make dev`. To create
-a production version, run `cargo +nightly make release`. Binaries will
+To create a debug version, run `cargo +nightly ndless build`. To create
+a production version, run `cargo +nightly ndless build -- --release`. Binaries will
 be in `target/armv5te-nspire-eabi/(debug or release)/name.tns`.
 
 
@@ -44,4 +43,4 @@ This project is set up using Cargo workspaces, which is not ideal for single-app
 setups. Instead, simply copy any of the directories into its own repository and
 write code there. Additionally, install `cargo-generate` with `cargo install cargo-generate`
 and run `cargo generate --git https://github.com/lights0123/nspire-rust-template.git` for a fully
-set-up template.
+configured template.
