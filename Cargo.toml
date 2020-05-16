@@ -1,5 +1,6 @@
 [workspace]
 members = [
+	"async-demo",
 	"hello-world",
 	"hello-world-sdl",
 	"hello-world-text",

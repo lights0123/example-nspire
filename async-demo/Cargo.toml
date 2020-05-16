@@ -1,17 +1,18 @@
 [package]
-name = "hello-world-sdl"
+name = "async-demo"
 version = "1.0.3"
 license = "MIT OR Apache-2.0"
 authors = ["lights0123 <developer@lights0123.com>"]
 edition = "2018"
 
 [dependencies]
-ndless = "0.8.2"
+ndless = "0.8.5"
+ndless-async = "0.1.1"
 ndless-handler = "0.2.1"
-ndless-sdl = "0.1.9"
+futures-util = { version = "0.3.5", default-features = false, features = ["alloc", "async-await-macro"] }
 
 [package.metadata.zehn]
-name = "Hello World SDL"
+name = "async-test"
 compress = true
-notice = "Press ESC to exit"
+notice = "Auto generated with cargo-generate"
 flags = "--240x320-support true"

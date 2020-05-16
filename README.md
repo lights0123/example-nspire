@@ -18,6 +18,7 @@ To create a debug version, run `cargo +nightly ndless build`. To create
 a production version, run `cargo +nightly ndless build -- --release`. Binaries will
 be in `target/armv5te-nspire-eabi/(debug or release)/name.tns`.
 
+**Warning**: the output binaries will be slow and large without enabling release mode! Be sure to enable it before distributing binaries.
 
 You may skip `+nightly` if you set nightly as your default compiler
 (`rustup default nightly`), or
