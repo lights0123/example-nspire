@@ -8,7 +8,6 @@ extern crate ndless_handler;
 use ndless::input::{get_keys, Key};
 use ndless::prelude::*;
 use ndless_sdl::nsdl::{Font, FontOptions};
-use ndless_sdl::video::{SurfaceFlag, VideoFlag};
 
 fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 	let str = str.into();
@@ -25,15 +24,7 @@ fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 
 #[entry]
 fn main() {
-	ndless_sdl::init(&[ndless_sdl::InitFlag::Video]);
-	let screen = ndless_sdl::video::set_video_mode(
-		320,
-		240,
-		16,
-		&[SurfaceFlag::SWSurface],
-		&[VideoFlag::NoFrame],
-	)
-	.expect("failed to set video mode");
+	let screen = ndless_sdl::init_default().expect("failed to set video mode");
 
 	let font = Font::new(FontOptions::Thin, 255, 255, 255);
 	let mut j = 0u32;
@@ -54,12 +45,12 @@ fn main() {
 			break;
 		}
 		let message = format!("Hello World! {:?}", keys);
-		screen.draw_str(&font, word_wrap(message, 50), 0, 0);
+		screen.draw_str(&font, &word_wrap(message, 50), 0, 0);
 
 		// Normally, in Rust, an overflowing integer will cause a `panic!`. To avoid that,
 		// use the `wrapping_add` method.
 		j = j.wrapping_add(1);
-		screen.draw_str(&font, format!("{}", j), 0, 100);
+		screen.draw_str(&font, &format!("{}", j), 0, 100);
 		screen.flip();
 	}
 	ndless_sdl::quit();

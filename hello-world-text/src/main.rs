@@ -7,7 +7,6 @@ extern crate ndless_handler;
 use ndless::input::{get_keys, Key};
 use ndless::prelude::*;
 use ndless_sdl::text::freetype::Text;
-use ndless_sdl::video::{SurfaceFlag, VideoFlag};
 
 #[entry]
 fn main() {
@@ -17,15 +16,7 @@ fn main() {
 	let open_sans = Vec::from(&include_bytes!("Roboto-Light-reduced.ttf")[..]);
 	let face = library.new_memory_face(open_sans, 0).unwrap();
 
-	ndless_sdl::init(&[ndless_sdl::InitFlag::Video]);
-	let screen = ndless_sdl::video::set_video_mode(
-		320,
-		240,
-		16,
-		&[SurfaceFlag::SWSurface],
-		&[VideoFlag::NoFrame],
-	)
-	.expect("failed to set video mode");
+	let screen = ndless_sdl::init_default().expect("failed to set video mode");
 
 	screen.fill_rect(
 		Some(ndless_sdl::Rect {

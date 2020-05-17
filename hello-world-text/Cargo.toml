@@ -7,7 +7,7 @@ edition = "2018"
 
 [dependencies]
 ndless = "0.8.2"
-ndless-sdl = "0.1.9"
+ndless-sdl = "0.2.0"
 ndless-handler = "0.2.1"
 ndless-freetype = "0.1.3"
 
