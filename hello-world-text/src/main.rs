@@ -1,5 +1,5 @@
 #![no_std]
-#![no_main]
+
 //! This demonstrates the basic usage of SDL and FreeType.
 
 extern crate ndless_handler;
@@ -8,7 +8,6 @@ use ndless::input::{get_keys, Key};
 use ndless::prelude::*;
 use ndless_sdl::text::freetype::Text;
 
-#[entry]
 fn main() {
 	let library = ndless_freetype::Library::init().unwrap();
 	// See https://stackoverflow.com/a/44440992 for how the reduced file was generated

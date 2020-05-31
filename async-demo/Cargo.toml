@@ -8,7 +8,7 @@ edition = "2018"
 [dependencies]
 ndless = "0.8.5"
 ndless-async = "0.1.1"
-ndless-handler = "0.2.1"
+ndless-handler = "0.3.0"
 futures-util = { version = "0.3.5", default-features = false, features = ["alloc", "async-await-macro"] }
 
 [package.metadata.zehn]

@@ -3,7 +3,7 @@
 ## Prerequisites
 - Ndless toolchain installed and added to path
 - Rustup installed
-- Latest Rust Nightly installed (nightly-2020-05-07 works)
+- Latest Rust Nightly installed (nightly-2020-05-31 works)
 - Unix-like (tested on Linux, most likely Mac and Cygwin will work as well)
 
 Complete install script:
@@ -42,6 +42,6 @@ are joined together with a space.
 # Make your own app
 This project is set up using Cargo workspaces, which is not ideal for single-application
 setups. Instead, simply copy any of the directories into its own repository and
-write code there. Additionally, install `cargo-generate` with `cargo install cargo-generate`
+write code there. Alternatively, install `cargo-generate` with `cargo install cargo-generate`
 and run `cargo generate --git https://github.com/lights0123/nspire-rust-template.git` for a fully
 configured template.

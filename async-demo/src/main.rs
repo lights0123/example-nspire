@@ -1,5 +1,5 @@
 #![no_std]
-#![no_main]
+
 extern crate ndless_handler;
 
 use futures_util::future;
@@ -9,7 +9,6 @@ use ndless_async::keypad::KeypadListener;
 use ndless_async::task::{block_on, AsyncListeners};
 use ndless_async::{first, StreamExt};
 
-#[entry]
 fn main() {
 	let listeners = AsyncListeners::new();
 	let keypad = KeypadListener::new(&listeners.timer());

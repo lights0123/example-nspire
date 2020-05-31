@@ -1,11 +1,9 @@
 #![no_std]
-#![no_main]
 
 extern crate ndless_handler;
 
 use ndless::prelude::*;
 
-#[entry]
 fn main() {
 	use ndless::msg::*;
 	match msg_numeric("title", "subtitle", "msg", (0, 5)) {

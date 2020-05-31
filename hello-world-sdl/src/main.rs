@@ -1,5 +1,4 @@
 #![no_std]
-#![no_main]
 
 //! This demonstrates the basic usage of SDL, as well as input from the calculator.
 
@@ -22,7 +21,6 @@ fn word_wrap(str: impl Into<String>, line_length: usize) -> String {
 	out
 }
 
-#[entry]
 fn main() {
 	let screen = ndless_sdl::init_default().expect("failed to set video mode");
 
